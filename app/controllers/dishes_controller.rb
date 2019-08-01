@@ -1,5 +1,6 @@
 class DishesController < ApplicationController
 	def index
+
   end
 
   def show
@@ -21,11 +22,5 @@ class DishesController < ApplicationController
   end   
 
   def destroy    
-  end   
-   
-  private
-  def dish_params   
-    params.require(:dish).permit(:name, :price, :category_id,
-    pictures_attributes: [:id, :image]) 
   end   
 end
