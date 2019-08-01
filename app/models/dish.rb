@@ -1,6 +1,6 @@
 class Dish < ApplicationRecord
-has_and_belongs_to_many :restaurants
-belongs_to :category
+    has_and_belongs_to_many :restaurants
+    belongs_to :category
 
     has_many :pictures, as: :imageble, dependent: :destroy
     accepts_nested_attributes_for :pictures
