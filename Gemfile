@@ -59,7 +59,7 @@ gem 'devise'
 
 gem 'jquery-rails'
 
-gem 'bootstrap'
+gem 'bootstrap', '~> 4.3.1'
 gem 'pry'
 
 #For file upload and saves in folder

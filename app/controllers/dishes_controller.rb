@@ -24,7 +24,6 @@ class DishesController < ApplicationController
   end   
    
   private
-
   def dish_params   
     params.require(:dish).permit(:name, :price, :category_id,
     pictures_attributes: [:id, :image]) 
