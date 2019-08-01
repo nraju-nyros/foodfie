@@ -1,0 +1,80 @@
+<!-- Navigation -->
+<nav class="navbar navbar-expand-md fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#"><img src="<%= asset_path( 'logo.png' ) %>" /></a>
+    <div class="header-list loc-srch">
+	    <ul class="nav navbar-nav">
+	      <li class="dropdown">
+	        <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Select Location<span class="caret"></span></a>
+	        <ul class="dropdown-menu">          
+	        </ul>
+	      </li>
+	    </ul>
+    </div>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Contact us<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">search</a>
+        </li> 
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <div style="margin-bottom: 50px;">
+    <div class="bg">
+      <div class="title">What do you <i>really</i> feel like?</div>
+        <div class="search">
+        	<%= form_tag search_page_path, :method => 'get' do %>
+            <input type="text" name="search" id="search" class="form-control food_search"       placeholder="Chips and burgers" style="width: 53%; height: 50px;">
+              <button class="btn btn-default" type="search">
+                <%= image_tag ("search.png")%><span style="color: #5ac7f9;padding-left: 5px;font-size: 15px;">Search</span>
+              </button>
+
+          <% end %>
+        </div>
+    </div>
+  </div>
+
+  <h6 align="center" class="top_rated_title" >TOP RATED DISHES</h6><br>
+  <div class="album text-muted">
+    <div class="container">
+      <div class="row dishes">
+        <%= render :partial => 'dishes'%>
+      </div><br>
+      <% if @dishes.next_page %>
+        <div class="link more btn_outer">
+        <%= link_to 'Load More', home_index_path(:page => @dishes.next_page), :class => 'next_page load-more'%>
+        </div>
+      <% end %>  
+    </div><br><br>
+  </div>
+
+
+<footer id="footer">
+  <div class="container">
+    <div class="row">
+    
+      <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+        <h2 id="footer_text"> Do more with the app. Download it today!</h2>
+        <ul>
+          <li>
+            <a target="_blank" href="https://play.google.com/store/apps/details?id=com.peppa.app"><img src="<%= asset_path( 'fooimage.png' ) %>" /></a>
+          </li>
+          <li>
+            <a target="_blank" href="https://itunes.apple.com/us/app/peppa/id1270825524?ls=1&amp;mt=8"><img src="<%= asset_path( 'fooimg2.png' ) %>" /></a>
+          </li>
+        </ul>
+      </div>
+        <div class="col-lg-4 col-md-4 pull-right col-xs-12 phone-img">
+        <img class="phone_img" src="<%= asset_path('phone-img.png')%>">
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+

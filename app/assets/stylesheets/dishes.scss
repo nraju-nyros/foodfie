@@ -1,0 +1,160 @@
+// Place all the styles related to the dishes controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+	.show_img_dish{
+  	width : 400px;
+  	height: 400px;
+	}
+    
+  .filter {
+    height: auto;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+	ul li{
+		display: inline-block;
+	}
+
+	.select_box label {
+    position: relative;
+    margin: 0;
+    width: 100%;
+  }
+
+  .select_box select {
+    width: 100%;
+    padding: 10px 20px;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    margin: 0;
+    color: #83929a;
+    outline: none;
+    display: inline-block;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    background: #fff;
+    background-position: center right;
+    border: solid 1px #d8d8d8;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 3px;
+  }
+
+
+  .show_dish{
+      width:100%;
+      height:554px;
+  }
+
+  .rating_dish{
+      position: absolute;
+      top: -420px;
+      left: 0;
+      right: 0;
+      text-align: right;
+      padding: 15px 20px;
+  }
+
+  .card-text_dish {
+      position: absolute;
+      bottom: 0px;
+      width: 100%;
+      left: 0;
+      right: 0;
+      padding: 20px;
+  }
+
+  .dish_info_left {
+      float: left;
+      width: 100%;
+      height: auto;
+      padding-bottom: 10px;
+      border-bottom: 2px solid #d8d8d8;
+      margin-bottom: 20px;
+  }
+
+
+  .rating-lg {
+      float: right;
+      text-align: right;
+      color: #95A3AA;
+      font-size: 14px;
+      font-weight: 700;
+      padding-top: 5px;
+      position: absolute;
+      top: 0px;
+      right: 10px;
+  }
+
+  .review_left:last-child {
+      padding-bottom: 0;
+  }
+  .review_left {
+      float: left;
+      width: 100%;
+      height: auto;
+      padding: 10px 0;
+  }
+
+  .media:first-child {
+      margin-top: 0;
+  }
+  .media:first-child {
+      margin-top: 0;
+  }
+  .media {
+      float: left;
+      width: 100%;
+      height: auto;
+  }
+
+  .media-left {
+      float: left;
+      width: 50px;
+      margin-right: 10px;
+      height: auto;
+  }
+
+  .food_sml_left {
+      float: left;
+      width: 40px;
+      margin-right: 10px;
+      height: auto;
+  }
+
+
+  .media-body {
+      /* float: left; */
+      /* width: 76%; */
+      text-align: left;
+  }
+  .media, .media-body {
+      overflow: hidden;
+      zoom: 1;
+  }
+  .media-left, .media-right, .media-body {
+      display: table-cell;
+      vertical-align: top;
+  }
+  .media-body {
+      width: 10000px;
+  }
+  .media, .media-body {
+      overflow: hidden;
+      zoom: 1;
+  }
+
+  .food_sml_right {
+      float: left;
+      text-align: left;
+      width: 100%;
+      position: relative;
+  }

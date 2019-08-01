@@ -1,0 +1,2 @@
+module RestaurantsDishesHelper
+end

@@ -1,0 +1,47 @@
+<div class="container" align="center"><br/><br/>
+  <div class="row">
+    <div class="col-md-4">
+      <% @restaurant.pictures.each do|p|%>
+      <%= image_tag(p.image_url, :class => 'img_restaurant') %> 
+      <% end %> 
+    </div>
+
+    <div class="col-md-4">
+      <div>
+        <label>Name:</label>
+          <%= @restaurant.name %> 
+      </div><br/>
+
+      <div>
+        <label>Mobile:</label>
+          <%= @restaurant.phone %>
+      </div><br/>
+
+      
+      <div>
+        <label>Email:</label>
+          <%= @restaurant.email %>
+      </div><br/>
+
+      <div>
+        <% @restaurant.locations.each do|p|%>
+          <label>Location:</label>
+          <%= p.city %> 
+        <% end %>
+      </div><br/>
+
+      <div>
+        <label>Dishes:</label>
+           <%= @restaurant.dishes.pluck(:name).join(',') %>
+      </div><br/><br/>
+    </div>
+  </div><br>
+  
+  <div>
+    <%= link_to 'Back',admin_restaurants_path,
+    :class => "btn btn-sm btn-warning"  %> 
+  </div>
+</div>
+
+
+

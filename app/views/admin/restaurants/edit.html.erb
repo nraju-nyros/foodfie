@@ -1,0 +1,69 @@
+
+<div class="container"  >
+  <div align="center" class="form"><br>
+  <h3>Update restaurant</h3>
+  <%= form_for @restaurant, url: {action: :update} do |f| %>
+
+   <div class="form-group">
+    <div class="col-sm-8">    
+      <label>Name </label>
+      <span class="err"><%= @restaurant.errors[:name].join('. ') %></span><br/>
+        <%= f.text_field :name , :class => 'form-control', :placeholder => 'Name'%>
+    </div>
+  </div>
+     
+  <div class="form-group">
+    <div class="col-sm-8"> 
+      <label>Email </label>
+       <span class="err"><%= @restaurant.errors[:email].join('. ') %></span><br/>
+      <%= f.text_field :email, :class => 'form-control', :placeholder => 'Email'  %>
+    </div>
+  </div>
+      
+  <div class="form-group"> 
+    <div class="col-sm-8"> 
+     <label >Mobile </label>
+      <span class="err"><%= @restaurant.errors[:mobile].join('. ') %></span><br/>
+       <%= f.text_field :phone, :class => 'form-control', :placeholder => 'Mobile'  %>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <div class="col-sm-8"> 
+      <label> Location</label>
+        <%= f.fields_for :locations do |l| %> 
+          <%= l.text_field :street, class: "form-control", :placeholder => 'Location'  %>
+          <%= l.text_field :city, class: "form-control", :placeholder => 'city'  %>
+        
+        <%= l.hidden_field :state, value: 'Andhra pradesh'%>
+        <%= l.hidden_field :country, value: 'india'%>
+        <%= l.hidden_field :pincode, value: 533001 %>
+        <% end %>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <div class="col-sm-8"> 
+      <label>Upload Picture</label>
+        <%= f.fields_for :pictures do |image_upload| %> 
+          <%= image_upload.file_field :image, class: "form-control"  %>
+        <% end %>
+    </div>
+  </div>
+
+   
+     <div class= "form-group" >
+      <div class="col-sm-8">
+        <%= f.submit "Save",class: "btn btn-block btn-md btn-primary " %>
+      </div>
+    </div>
+     <div class= "form-group" >
+      <div class="col-sm-8">
+        <%= link_to 'Back',admin_restaurants_path,:class => "btn btn-sm btn-info "  %> 
+       
+      </div>
+    </div>
+    
+  <% end %>
+    </div>
+</div>

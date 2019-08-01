@@ -1,0 +1,12 @@
+I"Ü(function() {
+  $(function() {
+    return $('.next_page').on('click', function(e) {
+      var url;
+      e.preventDefault();
+      url = $(this).attr('href');
+      return $.getScript(url);
+    });
+  });
+
+}).call(this);
+:ET

@@ -1,0 +1,88 @@
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA0fqeV3f8ACxDgxdVrDEnLYTMm3anXTPw"></script>
+
+<nav class="navbar navbar-expand-lg  static-top">
+  <div class="container">
+    <a class="navbar-brand" href="#"><img src="<%= asset_path( 'logo.png' ) %>" /></a>
+    <div class="header-list loc-srch">
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Select Location<span class="caret"></span></a>
+          <ul class="dropdown-menu">          
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Contact us<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">search</a>
+        </li> 
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid album text-muted">
+  <ul class="filter">
+    <li>
+      <div class="select_box"> filter</div>
+    </li>
+    <li>
+      <div class="select_box sort_by">
+        <label>
+          <select id="filter" class="sort">
+            <option selected="" value="">Sort by  </option>
+            <option value="price">PRICE</option>
+               <option value="ratings">RATING</option>
+          </select>
+        </label>
+      </div>
+    </li>
+    <li class="Allratings">
+      <div class="select_box rating_by">
+        <label>
+          <select id="rating_filter" class="sort_rating">
+            <option selected="" value="">All Ratings </option>
+            <option value="3">3+</option>
+            <option value="4">4+</option>
+            <option value="5">5+</option>
+          </select>
+        </label>
+      </div>
+    </li>
+    <li>
+      <div class="select_box multiselect">
+        <div class="selectBox" onclick="showCheckboxes()">
+          <label>
+          <select>
+            <option >All Dietary</option>
+          </select>
+         </label>
+          <div class="overSelect"></div>
+        </div>
+        <div id="checkboxes" >
+          <label for="veg" class="category" >
+            <input type="checkbox" id="veg" value="1" class="sort_dietary">Veg</label>
+          <label for="non-veg" class="category">
+            <input type="checkbox" id="non-veg" value="2" class="sort_dietary">Non-veg</label>
+             <label for="drinks" class="category">
+            <input type="checkbox" id="non-veg" value="3" class="sort_dietary">Drinks</label>
+        </div>
+      </div>
+    </li>
+  </ul> 
+  
+  <div id ="dishes" class="row col-xs-6 search" style="float: left; overflow-y: auto; height: 412px;width:56%">
+       
+    <%= render :partial => 'dishes'%>
+  </div>
+    
+  <div class="col-xs-6" id="map_canvas" style="float: right;position: relative;overflow: hidden;width: 560px;height: 575px">
+    
+  </div>
+    
+    
+</div><br><br>

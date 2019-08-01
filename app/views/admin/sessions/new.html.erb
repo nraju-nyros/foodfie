@@ -1,0 +1,35 @@
+<div class="container">
+  <div class="form-horizontal no-border form"  align="center" >
+  <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+   <h2 align="center">Log in</h2>
+      <div class="form-group">
+        <div class="col-sm-8">
+          <%= f.label :email %><br />
+          <%= f.email_field :email, autofocus: true, autocomplete: "email",class: 'form-control' %>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div class="col-sm-8">
+          <%= f.label :password %><br />
+          <%= f.password_field :password, autocomplete: "current-password",class: 'form-control' %>
+        </div>
+      </div>
+
+
+      <div class="form-group">
+          <div class="col-sm-8">
+        <%= f.submit "Log in", class: 'btn btn-block btn-success btn'  %>
+      </div>
+      </div>
+
+    <% end %>
+  </div>
+  <div align="center">
+   <%= render "admin/shared/links" %>
+  </div>
+
+</div> 
+
+
+

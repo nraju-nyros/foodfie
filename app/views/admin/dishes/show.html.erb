@@ -1,0 +1,118 @@
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg  static-top">
+  <div class="container">
+    <a class="navbar-brand" href="#"><img src="<%= asset_path( 'logo.png' ) %>" /></a>
+    <div class="header-list loc-srch">
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Select Location<span class="caret"></span></a>
+          <ul class="dropdown-menu">          
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Contact us<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">search</a>
+        </li> 
+      </ul>
+    </div>
+  </div>
+</nav>
+  <div class="content-top-mrgn">
+  <section id="single_food">
+    <div class="container-fluid">
+      <div class="row">
+        <div class=" col-lg-3 col-md-3 col-sm-12 col-xs-12 no_padding_left no_padding_right">
+        
+          <div class="restra_inner">
+            <div class="dish_info_left">
+              <div class="media">
+                <div class="media-left">
+                 
+                </div>
+                <div class="media-body">
+                  <div class="food_sml_right">
+                    <h2 ><%= @dish.name %></h2>
+                    <p class="restra-txt">
+                      <% @dish.restaurants.each do |r| %>
+                          <%= r.name %>
+                          <% end %>
+                    <p><i>chickent curry made of sodfisdff</i></p>
+                    <ul class="single_dish_tag">
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+
+
+            <div id="comments" style="float: left; overflow-y: auto; width: 100%;">
+                <div class="review_left">
+                  <div class="media">
+                    <div class="media-left">
+                      <div class="food_sml_left"><img alt="Saisiva Krishna" src="http://203.193.173.125:5000/assets/missing-01cdec11375895ed6b88e3d70b7f07ba9d351167f173047003bba40b501e7c79.png" style="width:40px;"></div>
+                    </div>
+                    <div class="media-body">
+                      <div class="food_sml_right">
+                        <div class=" col-lg-8 col-md-8 col-sm-8 col-xs-8 no_padding_left no_padding_right">
+                          <p class="rv_txt">Not really</p>
+                          <h2 class="restra-txt">Saisiva Krishna</h2>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 no_padding_left no_padding_right">
+                          <div class="rating-lg">
+                           <img class="rating-pic" src="<%= asset_path( 'rating.png' ) %>" />
+                  <span class="dish_show_rating"><%= @dish.ratings.average(:rating) %></span><br>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        
+        </div>
+        <div class=" col-lg-9 col-md-9 col-sm-12 col-xs-12 no_padding_right no_padding_left hover_outr"> 
+          <div class="single_item">
+             <%= link_to dish_path(@dish) do %> 
+                <% @dish.pictures.each do|p|%>
+                  <%=image_tag(p.image_url.to_s, :class => 'show_dish')%>
+                <% end %>
+              <% end %>
+
+              <div class="card-text_dish">
+               
+                <h2 class="card-text1"><%= @dish.name %></h2>
+                <p class="rating_dish">
+                  <img class="rating-pic" src="<%= asset_path( 'rating.png' ) %>" />
+                  <span class="dish_rating"><%= @dish.ratings.average(:rating) %></span><br>
+                  <span class="votes" style="color: #fff"><%= @dish.ratings.count %>VOTE</span>
+                </p>
+
+                <p style="margin-bottom: 10px;">
+                  <span class="card-restaurant-name">
+                    <% @dish.restaurants.each do |r| %>
+                      <%= r.name %>
+                      <% end %></span>
+                  <span class="card-restaurant-price">$<%= @dish.price %>.0</span>   
+                </p>
+              </div>
+              
+
+
+  </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+
+
