@@ -3,16 +3,16 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .navbar{
-  background-color: #fff;
-  background-image: none;
-  box-shadow: none;
-  border: none;
-  position: fixed;  
-  right: 0;
-  left: 0;
-  z-index: 1030;
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
+    background-color: #fff;
+    background-image: none;
+    box-shadow: none;
+    border: none;
+    position: fixed;  
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
 }
 
 
@@ -27,58 +27,58 @@
 
 }
 .nav-link:hover{
-	color: #babbbf;
+    color: #babbbf;
 }
 
 .bg{
-	background-image: url('/assets/top image.png');
-	background-size: cover;
-	height: 400px;
-	width:100%;
+    background-image: url('/assets/top image.png');
+    background-size: cover;
+    height: 400px;
+    width:100%;
 }
 
 .image_text{
-	padding-top: 140px;
-  float: left;
-  width: 100%;
-  height: auto;
-  color: #fff;
-  text-align: center;
-  font-size: 36px;
-  font-style: normal;
-  line-height: 50px;
-  font-weight: 400;
-  font-family: 'Playfair Display', serif;
-  margin-bottom: 20px;
-  margin-top: 20px;
+    padding-top: 140px;
+    float: left;
+    width: 100%;
+    height: auto;
+    color: #fff;
+    text-align: center;
+    font-size: 36px;
+    font-style: normal;
+    line-height: 50px;
+    font-weight: 400;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 
 .title{
-	color: #fff;
-	font-size: 12px;
-	font-weight: 700;
-	text-align: center;
-	margin-bottom: 20px;
-  margin-top: 20px;
-  padding-top: 150px;
-  font-size: 36px;
-  font-style: normal;
-  line-height: 50px;
-  font-weight: 400;
-  font-family: 'Playfair Display', serif;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding-top: 150px;
+    font-size: 36px;
+    font-style: normal;
+    line-height: 50px;
+    font-weight: 400;
+    font-family: 'Playfair Display', serif;
 }
 
 /*loop dishes data*/
 .display-img{
-	position: relative;
-	height: 300px;
-	width:300px;
-	margin:30px;
-
+    position: relative;
+    height: 300px;
+    width:300px;
+    margin:30px;
 }
+
 .img-name{
-	position: absolute;
+    position: absolute;
 }
 
 .card{
@@ -87,481 +87,481 @@
 
 
 * {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 .image-box {
-  position: relative;
-  margin: auto;
-  overflow: hidden;
-  width: 350px;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    width: 350px;
 }
 .image-box img {
-  max-width: 100%;
-  transition: all 0.3s;
-  display: block;
-  width: 100%;
-  height: 350px;
-  transform: scale(1);
+    max-width: 100%;
+    transition: all 0.3s;
+    display: block;
+    width: 100%;
+    height: 350px;
+    transform: scale(1);
 }
 
 .image-box:hover img {
-  transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 .card-text {
-  position: absolute;
-  bottom: 50px;
-  width: 100%;
-  left: 0;
-  right: 0;
-  padding: 20px;
+    position: absolute;
+    bottom: 50px;
+    width: 100%;
+    left: 0;
+    right: 0;
+    padding: 20px;
   
 }
 .card-text1 {
-  font-family: 'Playfair Display', serif;
-  font-size: 32px;
-  font-weight: 400;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.25;
-  color: #fff;
-  margin-top: 20px;
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.25;
+    color: #fff;
+    margin-top: 20px;
 }
 
 .card-restaurant-name{
-	float: left;
-	font-size: 15px;
-	font-weight: 700;
-  letter-spacing: .8px;
-  color: #fff;
-  text-transform: uppercase;
-  margin-bottom: 10px;
+    float: left;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: .8px;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 10px;
 }
 
 .card-restaurant-price{
-	float: right;
-	font-size: 15px;
-	font-weight: 700;
-  letter-spacing: .8px;
-  color: #fff;
-  text-transform: uppercase;
-  margin-bottom: 10px;
+    float: right;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: .8px;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 10px;
 }
 
 .dish-btm{
-	float: left;
-  width: 100%;
-  height: 75px;
-  position: relative;
-  padding: 14px 20px;
-  border: 1px solid #d8d8d8;
-  border-top: none;
-  border-radius: 0 0 3px 3px;
+    float: left;
+    width: 100%;
+    height: 75px;
+    position: relative;
+    padding: 14px 20px;
+    border: 1px solid #d8d8d8;
+    border-top: none;
+    border-radius: 0 0 3px 3px;
 }
 
 .location{
-	width: 19px;
-	height: 19px;
-	border-right: 1px solid #7b90a2;
-	border-radius: 0 0 3px 3px;
+    width: 19px;
+    height: 19px;
+    border-right: 1px solid #7b90a2;
+    border-radius: 0 0 3px 3px;
 }
 
 .dish-location{
-	padding: 0;
-  margin: 0;
-  float: left;
-  width: 100%;
-  list-style: none;
-  text-align: left;
-  color: #7b90a2;
-  border: none;
-  font-size: 12px;
-  font-weight: 400;
-  text-align: left;
-  letter-spacing: 2px;
+    padding: 0;
+    margin: 0;
+    float: left;
+    width: 100%;
+    list-style: none;
+    text-align: left;
+    color: #7b90a2;
+    border: none;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: left;
+    letter-spacing: 2px;
 }
 
 
 .button {
-  background-color: #4CAF50; /* Green */
-  border: none;
-  color: white;
-  padding: 16px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  -webkit-transition-duration: 0.4s; /* Safari */
-  transition-duration: 0.4s;
-  cursor: pointer;
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
 }
 
 .button1 {
-  background-color: white; 
-  color: #83929a;
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 1px;
-  text-align: center;
-  color: #83929a;
-  text-transform: uppercase;
-  border-radius: 3px;
-  border: solid 1px #d8d8d8;
-  display: inline-block;
-  margin: 0 auto;
-  padding: 11px 35px;
-  position: relative;
-  z-index: 999;
+    background-color: white; 
+    color: #83929a;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #83929a;
+    text-transform: uppercase;
+    border-radius: 3px;
+    border: solid 1px #d8d8d8;
+    display: inline-block;
+    margin: 0 auto;
+    padding: 11px 35px;
+    position: relative;
+    z-index: 999;
 }
 
 .button1:hover {
-  background-color: #f7aa97;
-  color: white;
+    background-color: #f7aa97;
+    color: white;
 }
 
 
 .search{
-  width: 460px;
-	background: white;
-	margin: auto;
-	border-radius: 5px;
-	padding: 8px;
+    width: 460px;
+    background: white;
+    margin: auto;
+    border-radius: 5px;
+    padding: 8px;
 }
 
 .food_search{
-  width: 77% !important;
-  height: 100% !important;
-  float: left;
-  border: 0px !important;
-  outline: 0px;
-  padding: 10px !important;
-  border-right: 1px solid #b3afaf !important;
-  border-radius: 0px !important;
-  clear: both;
+    width: 77% !important;
+    height: 100% !important;
+    float: left;
+    border: 0px !important;
+    outline: 0px;
+    padding: 10px !important;
+    border-right: 1px solid #b3afaf !important;
+    border-radius: 0px !important;
+    clear: both;
 }
 
 .location{
-	font-size: 10px;
+    font-size: 10px;
 }
 
 .top_rated_title{
-	width: 100%;
-  height: auto;
-  text-align: center;
-  text-transform: uppercase;
-  color: #7b90a2;
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 2px;
-  margin-bottom: 37px;
-  margin-top: 47px;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    text-transform: uppercase;
+    color: #7b90a2;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 37px;
+    margin-top: 47px;
 }
 
 #footer{
-	float: left;
-  width: 100%;
-  height: auto;
-  position: relative;
-  background: #f7aa97;
-  margin-top: 90px;
-  padding: 50px 0 0;
+    float: left;
+    width: 100%;
+    height: auto;
+    position: relative;
+    background: #f7aa97;
+    margin-top: 90px;
+    padding: 50px 0 0;
 
 }
 
 #footer_text{
-	float: left;
-  width: 100%;
-  height: auto;
-  font-size: 22px;
-  font-weight: 400;
-  color: #fff;
-  font-family: 'Playfair Display', serif;
-  margin-bottom: 20px;
+    float: left;
+    width: 100%;
+    height: auto;
+    font-size: 22px;
+    font-weight: 400;
+    color: #fff;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 20px;
 }
 
 #footer ul{
-	float: left;
-  height: auto;
-  margin: 0;
-  padding: 0;
-  list-style: none;
+    float: left;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 #footer ul li {
-  display: inline-block;
-  margin-right: 20px;
-  margin-bottom: 10px;
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 10px;
 }
 
 #footer .row {
-  position: relative;
-  padding-bottom: 50px;
+    position: relative;
+    padding-bottom: 50px;
 }
 
 #footer .phone-img{
-  position: absolute;
-  top: auto;
-  z-index: 999;
-  display: block;
-  bottom: 0;
-  right: 15px;
+    position: absolute;
+    top: auto;
+    z-index: 999;
+    display: block;
+    bottom: 0;
+    right: 15px;
 }
 
 .phone-img img {
-  max-width: 315px !important;
+    max-width: 315px !important;
 }
 
 
 .rating {
-  position: absolute;
-  top: -238px;
-  left: 0;
-  right: 0;
-  text-align: right;
-  padding: 15px 20px;
+    position: absolute;
+    top: -238px;
+    left: 0;
+    right: 0;
+    text-align: right;
+    padding: 15px 20px;
 }
 
 .dish_rating{
-  font-size: 18px;
-  font-weight: 700;
-  color: #fff;
-  padding-left: 5px;
-  display: inline-block;
-  position: relative;
-  top: 2px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    padding-left: 5px;
+    display: inline-block;
+    position: relative;
+    top: 2px;
 
 }
 
 .votes{
-  float: right;
-  width: 100%;
-  margin: 5px 0px;
-  font-size: 10px;
-  font-weight: 700;
-  letter-spacing: .8px;
-  color: #fff;
-  text-transform: uppercase;
+    float: right;
+    width: 100%;
+    margin: 5px 0px;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: .8px;
+    color: #fff;
+    text-transform: uppercase;
 }
 
 .search .image-box {
-  position: relative;
-  margin: auto;
-  overflow: hidden;
-  width: 311px;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    width: 311px;
 }
 
 .search  .image-box img {
-  max-width: 100%;
-  transition: all 0.3s;
-  display: block;
-  width: 100%;
-  height: 350px;
-  transform: scale(1);
+    max-width: 100%;
+    transition: all 0.3s;
+    display: block;
+    width: 100%;
+    height: 350px;
+    transform: scale(1);
 }
 
 .search .image-box:hover img {
-  transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 .search .card{
-  width:314px;
+    width:314px;
 }
 
 
 
 
 .btn_outer {
-  float: left;
-  width: 100%;
-  height: auto;
-  text-align: center;
-  padding: 10px 0
+    float: left;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding: 10px 0
 }
 
 .btn_outer a {
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 1px;
-  text-align: center;
-  color: #83929a;
-  text-transform: uppercase;
-  border-radius: 3px;
-  border: solid 1px #d8d8d8;
-  display: inline-block;
-  margin: 0 auto;
-  padding: 11px 35px;
-  position: relative;
-  z-index: 999
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #83929a;
+    text-transform: uppercase;
+    border-radius: 3px;
+    border: solid 1px #d8d8d8;
+    display: inline-block;
+    margin: 0 auto;
+    padding: 11px 35px;
+    position: relative;
+    z-index: 999
 }
 
 .btn_outer a:hover {
-  text-decoration: none;
-  color: #fff;
-  border-color: #f7aa97
+    text-decoration: none;
+    color: #fff;
+    border-color: #f7aa97
 }
 
 .btn_outer a::before {
-  position: absolute;
-  width: 0;
-  height: auto;
-  height: 100%;
-  background: #f7aa97;
-  top: 0;
-  left: 0;
-  display: block;
-  content: '';
-  z-index: -1;
-  -webkit-transition: all .2s linear;
-  transition: all .2s linear;
+    position: absolute;
+    width: 0;
+    height: auto;
+    height: 100%;
+    background: #f7aa97;
+    top: 0;
+    left: 0;
+    display: block;
+    content: '';
+    z-index: -1;
+    -webkit-transition: all .2s linear;
+    transition: all .2s linear;
 }
 
 .btn_outer a::after {
-  position: absolute;
-  width: 0;
-  height: auto;
-  height: 100%;
-  background: #f7aa97;
-  top: 0;
-  right: 0;
-  display: block;
-  content: '';
-  z-index: -1;
-  -webkit-transition: all .2s linear;
-  transition: all .2s linear
+    position: absolute;
+    width: 0;
+    height: auto;
+    height: 100%;
+    background: #f7aa97;
+    top: 0;
+    right: 0;
+    display: block;
+    content: '';
+    z-index: -1;
+    -webkit-transition: all .2s linear;
+    transition: all .2s linear
 }
 
 .btn_outer a:hover::before,
 .btn_outer a:hover::after {
-  width: 100%;
-  height: 100%
+    width: 100%;
+    height: 100%
 }
 
 .dish_btm {
-  display: inline-block;
-  border-right: 2px solid #d8d8d8;
-  padding-left: 10px;
-  padding-right: 10px;
+    display: inline-block;
+    border-right: 2px solid #d8d8d8;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .location_text{
-  color: #7b90a2;
-  background-size: 24px auto;
-  line-height: 15px;
+    color: #7b90a2;
+    background-size: 24px auto;
+    line-height: 15px;
 }
 
 .location_text:hover{
-  text-decoration: none;
-  color: #7b90a2;
+    text-decoration: none;
+    color: #7b90a2;
 }
 
 
 .sort_by label:before{
-  content: '';
-  right: 10px;
-  top: auto;
-  bottom: 12px;
-  padding: 0 0 2px;
-  position: absolute;
-  pointer-events: none;
-  width: 0;
-  height: 0;
-  border-left: 7px solid transparent;
-  border-right: 7px solid transparent;
-  border-top: 10px solid #83929a;
+    content: '';
+    right: 10px;
+    top: auto;
+    bottom: 12px;
+    padding: 0 0 2px;
+    position: absolute;
+    pointer-events: none;
+    width: 0;
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 10px solid #83929a;
 }
 
 .rating_by label:before{
-  content: '';
-  right: 10px;
-  top: auto;
-  bottom: 12px;
-  padding: 0 0 2px;
-  position: absolute;
-  pointer-events: none;
-  width: 0;
-  height: 0;
-  border-left: 7px solid transparent;
-  border-right: 7px solid transparent;
-  border-top: 10px solid #83929a;
+    content: '';
+    right: 10px;
+    top: auto;
+    bottom: 12px;
+    padding: 0 0 2px;
+    position: absolute;
+    pointer-events: none;
+    width: 0;
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 10px solid #83929a;
 }
 
 .selectBox label:before{
-  content: '';
-  right: 10px;
-  top: auto;
-  bottom: 12px;
-  padding: 0 0 2px;
-  position: absolute;
-  pointer-events: none;
-  width: 0;
-  height: 0;
-  border-left: 7px solid transparent;
-  border-right: 7px solid transparent;
-  border-top: 10px solid #83929a;
+    content: '';
+    right: 10px;
+    top: auto;
+    bottom: 12px;
+    padding: 0 0 2px;
+    position: absolute;
+    pointer-events: none;
+    width: 0;
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 10px solid #83929a;
 }
 
 
 .Allratings{
-  margin-top: 5px;
+    margin-top: 5px;
 }
 
 .select_box {
-  float: left;
-  width: 130px;
-  height: auto;
+    float: left;
+    width: 130px;
+    height: auto;
 }
 .filter li:first-child {
-  width: 10%;
-  font-size: 12px;
-  font-weight: 700;
-  color: #83929a;
-  text-transform: uppercase;
-  padding-bottom: 12px;
-  margin-left: 0;
-  margin-top: 5px;
+    width: 10%;
+    font-size: 12px;
+    font-weight: 700;
+    color: #83929a;
+    text-transform: uppercase;
+    padding-bottom: 12px;
+    margin-left: 0;
+    margin-top: 5px;
    
 }
 
 .multiselect {
-  width: 200px;
-  position: absolute;
-  z-index: 999;
-  top: 91px;
+    width: 200px;
+    position: absolute;
+    z-index: 999;
+    top: 91px;  
 }
 
 .selectBox {
-  position: relative;
+    position: relative;
 }
 
 .selectBox select {
-  width: 100%;
-  font-weight: bold;
+    width: 100%;
+    font-weight: bold;
 }
 
 .overSelect {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
 }
 
 #checkboxes {
-  display: none;
-  border: 1px #dadada solid;
-  background: rgb(255, 255, 255); 
+    display: none;
+    border: 1px #dadada solid;
+    background: rgb(255, 255, 255); 
 }
 
 #checkboxes label {
-  display: block;
+    display: block;
 }
 
 label.category{
-  padding-left:20px;
+    padding-left:20px;
 }

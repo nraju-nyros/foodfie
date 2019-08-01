@@ -1,7 +1,7 @@
-
-$('.dishes').append('<%= escape_javascript render(:partial => "home/dishes")  %>');
+$('.dishes').append('<%= j render(:partial => "home/dishes")  %>');
 <% if @dishes.next_page %>
   $('.next_page').attr('href','<%= home_index_path(:page => @dishes.next_page) %>');
 <% else %>
   $('.more').remove();
 <% end %>
+	

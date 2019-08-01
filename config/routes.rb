@@ -11,7 +11,6 @@ Rails.application.routes.draw do
 
   resources :admin ,:only => [:index]
 
-
   #Admin panel Dishes enter through restaurants
   namespace :admin do
     resources :restaurants do
@@ -19,7 +18,6 @@ Rails.application.routes.draw do
     end
   end
 
- 
   resources :dishes
   resources :locations
   resources :pictures

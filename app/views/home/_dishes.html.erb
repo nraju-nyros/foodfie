@@ -1,42 +1,42 @@
 <% if @dishes.present? %>
 <% @dishes.each do |dish| %>
-    <div class="card">
-        <%= link_to dish_path(dish) do %> 
-        <div class="image-box">
-            <% dish.pictures.each do|p|%>
-            <%=image_tag(p.image_url.to_s )%>
-            <% end %>
-    	</div>
+  <div class="card">
+    <%= link_to dish_path(dish) do %> 
+      <div class="image-box">
+        <% dish.pictures.each do|p|%>
+        <%=image_tag(p.image_url.to_s )%>
         <% end %>
+      </div>
+    <% end %>
 
-        <div class="card-text">
-          <h2 class="card-text1"><%= dish.name %></h2>
-          <p class="rating">
-          	<img class="rating-pic" src="<%= asset_path( 'rating.png' ) %>" />
-            <span class="dish_rating"><%= dish.ratings.average(:rating) %></span><br>
-            <span class="votes" style="color: #fff"><%= dish.ratings.count %>VOTE</span>
-          </p>
-          <p style="margin-bottom: 10px;">
-          	<span class="card-restaurant-name">
-          		<% dish.restaurants.each do |r| %>
-                <%= r.name %>
-                <% end %></span>
-            <span class="card-restaurant-price">$<%= dish.price %>.0</span>   
-          </p>
-        </div>
+      <div class="card-text">
+        <h2 class="card-text1"><%= dish.name %></h2>
+        <p class="rating">
+        	<img class="rating-pic" src="<%= asset_path( 'rating.png' ) %>" />
+          <span class="dish_rating"><%= dish.ratings.average(:rating) %></span><br>
+          <span class="votes" style="color: #fff"><%= dish.ratings.count %>VOTE</span>
+        </p>
+        <p style="margin-bottom: 10px;">
+        	<span class="card-restaurant-name">
+        		<% dish.restaurants.each do |r| %>
+              <%= r.name %>
+              <% end %></span>
+          <span class="card-restaurant-price">$<%= dish.price %>.0</span>   
+        </p>
+      </div>
             
-        <div class="dish-btm">
-        	<% dish.restaurants.each do |r| %>
-            <p class="dish-location" style="width:309px;">
-            	<img class="location" src="<%= asset_path( 'location.png' ) %>" />
-              <a class="location_text" target="_blank" href="http://maps.google.com/?q=<%=(r.locations.pluck(:street, :city, :state, :country).join(',')) %>">
-              <% r.locations.each do |l|%>
-                <%= l.street %>,<%= l.city %>, <%=l.pincode%></a>
-              <% end %>
-            </p>
-          <% end %>
-        </div>
-    </div>
+      <div class="dish-btm">
+      	<% dish.restaurants.each do |r| %>
+          <p class="dish-location" style="width:309px;">
+          	<img class="location" src="<%= asset_path( 'location.png' ) %>" />
+            <a class="location_text" target="_blank" href="http://maps.google.com/?q=<%=(r.locations.pluck(:street, :city, :state, :country).join(',')) %>">
+            <% r.locations.each do |l|%>
+              <%= l.street %>,<%= l.city %>, <%=l.pincode%></a>
+            <% end %>
+          </p>
+        <% end %>
+      </div>
+  </div>
 <% end %>
 
 <% else %>
