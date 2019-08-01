@@ -1,3 +1,4 @@
+<% if @dishes.present? %>
 <% @dishes.each do |dish| %>
   <div class="card">
     <%= link_to dish_path(dish) do %> 
@@ -37,6 +38,9 @@
     </div>
   </div>
 <% end %>
+<% else %>
+  <div class="no_result">No result found</div>
+<% end %>     
 
 
 

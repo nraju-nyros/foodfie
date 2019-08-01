@@ -100,7 +100,6 @@ function initMap() {
   var location = gon.locations
   var restaurant = gon.restaurants
   for(var i = 0 ; i < location.length; i++ ){
-    for(var i = 0; i < restaurant.length; i++){
       var marker = new google.maps.Marker({
         position: {lat: location[i].latitude, lng: location[i].longitude},
         map: map,
@@ -114,7 +113,7 @@ function initMap() {
           labelClass: "label", // the CSS class for the label
         }
       }); 
-    }
+  
   }
 }
 

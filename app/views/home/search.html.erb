@@ -74,15 +74,15 @@
       </div>
     </li>
   </ul> 
-  
-  <div id ="dishes" class="row col-xs-6 search" style="float: left; overflow-y: auto; height: 412px;width:56%">
-       
+
+  <% if @dishes.present? %>
+  <div id ="dishes" class="row col-xs-6 search" style="float: left; overflow-y: auto; height: 412px;width:56%">    
     <%= render :partial => 'dishes'%>
   </div>
     
-  <div class="col-xs-6" id="map_canvas" style="float: right;position: relative;overflow: hidden;width: 560px;height: 575px">
-    
+  <div class="col-xs-6" id="map_canvas" style="float: right;position: relative;overflow: hidden;width: 560px;height: 575px"> 
   </div>
-    
-    
 </div><br><br>
+  <% else %>
+  <div> no data found </div>
+  <% end %>
