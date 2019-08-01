@@ -4,8 +4,8 @@
         <%= link_to dish_path(dish) do %> 
         <div class="image-box">
             <% dish.pictures.each do|p|%>
-    		  <%=image_tag(p.image_url.to_s )%>
-    		<% end %>
+            <%=image_tag(p.image_url.to_s )%>
+            <% end %>
     	</div>
         <% end %>
 
