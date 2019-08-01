@@ -11,7 +11,7 @@
 //= require_tree .
 
 $(document).ready(function () {
-  // Sorting onchange dishes in searchpage
+  // Sort by price and avg rating onchange dishes in searchpage
   $('.sort').on('change', function (e) {
     var name = getUrlVars()["search"];
      

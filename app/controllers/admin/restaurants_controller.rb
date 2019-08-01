@@ -1,6 +1,6 @@
 class Admin::RestaurantsController < ApplicationController
 	def index
-    @restaurants = Restaurant.all.order(created_at: :asc).paginate(page:  params[:page], per_page: 5)
+    @restaurants = Restaurant.all.order(created_at: :asc).paginate(page:  params[:page], per_page: 4)
   end
   
   def show
