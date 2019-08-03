@@ -47,7 +47,7 @@
       </div><br>
       <% if @dishes.next_page %>
         <div class="link more btn_outer">
-        <%= link_to 'Load More', home_index_path(:page => @dishes.next_page), :class => 'next_page load-more'%>
+        <%= link_to 'Load More', home_index_path(:page => @dishes.next_page), :class => 'next_page load-more',:remote => true if @dishes.next_page%>
         </div>
       <% end %>  
     </div><br><br>

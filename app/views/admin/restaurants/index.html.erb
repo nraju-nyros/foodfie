@@ -1,4 +1,3 @@
-
 <br>
 <div class="container" align="center" >
   <nav class="navbar navbar-expand-sm   navbar-light bg-light">
@@ -49,7 +48,7 @@
                 </div>
               <% end %></td>
           <td><%= truncate(r.locations.pluck(:street, :city).join(',')) %></td>
-          <td><%= r.dishes.pluck(:name).join(',') %></td>
+          <td><%= truncate(r.dishes.pluck(:name).join(',')) %></td>
           <td><%= link_to 'show', admin_restaurant_path(r),:class => 'btn btn-sm btn-success'
                   %>		
               <%= link_to 'edit', edit_admin_restaurant_path(r), :class => 'glyphicon glyphicon-edit btn btn-sm btn-info'%>

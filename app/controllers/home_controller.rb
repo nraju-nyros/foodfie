@@ -22,11 +22,16 @@ class HomeController < ApplicationController
     end
 
     if params[:ratings_filter]
-     @dishes = Dish.sort_ratings(params[:ratings_filter]).where("name LIKE ?", "%#{params[:name]}%")
+     @dishes = Dish.sort_ratings(params[:ratings_filter]).where("name LIKE ?", "%#{params[:search]}%")
     end
 
     if params[:category]
       @dishes = Dish.by_category(params[:category]).where("name LIKE ?", "%#{params[:search]}%")
+    end
+
+    if params[:restaurant_id]
+     @restaurant = Restaurant.find(params[:restaurant_id])
+     @dishes = @restaurant.dishes
     end
 
   end
@@ -36,16 +41,36 @@ class HomeController < ApplicationController
   def map_location
     @dishes = Dish.all.where("name LIKE ?", "%#{params[:search]}%")
     locations = []
-    restaurants = []
+    restaurant = []
     @dishes.each do |d|
       d.restaurants.each do |r|
-          restaurants.push(r)
+          restaurant.push(r)
         r.locations.each do |l|   
           locations.push(l)
         end
       end 
     end
-      gon.locations = locations
-      gon.restaurants = restaurants
+      gon.locations = locations 
+      gon.restaurant = restaurant
+      
+
+      # restaurant dishes count
+      restaurant_dish = []
+      restaurant.each do |k|
+        count =  k.dishes.count
+        restaurant_dish.push(count)
+      end
+      gon.restaurant_dish = restaurant_dish
+
+
+      # restaurant pictures
+      pictures = []
+      restaurant.each do |r|
+        r.pictures.each do |p|
+          pictures.push(p)
+        end
+      end
+      gon.pictures = pictures
+      puts pictures
   end
 end

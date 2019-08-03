@@ -18,7 +18,8 @@ Rails.application.routes.draw do
     end
   end
 
-  resources :dishes
+  resources :dishes, :only => [:show]
+  resources :restaurants
   resources :locations
   resources :pictures
   resources :dishes_restaurants

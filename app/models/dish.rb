@@ -1,5 +1,5 @@
 class Dish < ApplicationRecord
-    has_and_belongs_to_many :restaurants
+    has_and_belongs_to_many :restaurants, dependent: :destroy
     belongs_to :category
 
     has_many :pictures, as: :imageble, dependent: :destroy

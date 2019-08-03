@@ -1,5 +1,5 @@
 class Location < ApplicationRecord
-  has_and_belongs_to_many :restaurants
+  has_and_belongs_to_many :restaurants, :dependent => :destroy
   
   validates_presence_of :street,message:"can't be empty"
   validates_presence_of :city,message:"can't be empty"
